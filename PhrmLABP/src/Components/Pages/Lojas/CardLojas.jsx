@@ -17,13 +17,18 @@ function ListaDeLoja() {
       {formValuesList.map((formValues, index) => (
         <Card key={index}>
           <h2>{formValues.nome}</h2>
-          <p>{formValues.endereco}</p>
           <p>Razão social: {formValues.razaoSocial}</p>
           <p>CNPJ: {formValues.cnpj}</p>
           <p>Nome Fantasia: {formValues.nomeFantasia}</p>
           <p>E-mail: {formValues.email}</p>
           {formValues.telefone && <p>Telefone: {formValues.telefone}</p>}
           <p>Celular: {formValues.celular}</p>
+          <p>{formValues.endereco} - {formValues.numero}</p>
+          <p>{formValues.bairro}</p>
+          <p>{formValues.cidade}</p>
+          <p>{formValues.estado}</p>
+          <p>{formValues.cep}</p>
+         
         </Card>
       ))}  
        </BodyContainer>

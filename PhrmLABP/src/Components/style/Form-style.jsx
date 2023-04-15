@@ -51,7 +51,64 @@ const BodyContainer = styled.div`
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  .Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Login h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.Login label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.Login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.Login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.Login button:hover {
+  background-color: #3e8e41;
+}
+
+.Login .error {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+  @media  (min-width: 768px) {
     padding: 40px;
 
     label {

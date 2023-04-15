@@ -16,13 +16,11 @@ function ListaDeLoja() {
       {formValuesList.map((formValues2, index) => (
         <Card key={index}>
           <h2>{formValues2.nome}</h2>
-          <p>{formValues2.endereco}</p>
-          <p>Razão social: {formValues2.razaoSocial}</p>
-          <p>CNPJ: {formValues2.cnpj}</p>
-          <p>Nome Fantasia: {formValues2.nomeFantasia}</p>
-          <p>E-mail: {formValues2.email}</p>
-          {formValues2.telefone && <p>Telefone: {formValues2.telefone}</p>}
-          <p>Celular: {formValues2.celular}</p>
+          <p>{formValues2.laboratorio}</p>
+          <p>Dosagem: {formValues2.dosagem}</p>
+          <p>Laboratorio: {formValues2.laboratorio}</p>
+          <p>Preco: R$ {formValues2.preco}</p>
+          <p>Tipo: {formValues2.tipo}</p>
         </Card>
       ))}  
        </BodyContainer>

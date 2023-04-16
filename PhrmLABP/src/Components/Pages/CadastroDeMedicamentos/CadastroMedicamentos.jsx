@@ -15,10 +15,11 @@ function MedicamentoForm() {
       const key = `formValues2_${new Date().toISOString()}`;
       // Salva o registro no localStorage com a chave gerada
       localStorage.setItem(key, JSON.stringify(formValues));
-
       // Reseta o estado do formulário
       setFormValues({});
-   };
+      // Reseta os campos do formulário
+      event.target.reset();
+    };
 
 
    return (

@@ -14,7 +14,7 @@ display: flex;
     align-content: space-around;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #a321c46f;
+    background-color:#3c75a7;
     box-shadow:  #000000f1(11, 11, 11, 1.36) 0px 0px 10px ;
     
   border: 1px solid #ccc;

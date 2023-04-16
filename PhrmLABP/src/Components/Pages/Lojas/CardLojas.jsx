@@ -13,25 +13,27 @@ function ListaDeLoja() {
     setFormValuesList(storedFormValuesList);
   }, []);
   return (
-    <BodyContainer>
-      {formValuesList.map((formValues, index) => (
-        <Card key={index}>
-          <h2>{formValues.nome}</h2>
-          <p>Razão social: {formValues.razaoSocial}</p>
-          <p>CNPJ: {formValues.cnpj}</p>
-          <p>Nome Fantasia: {formValues.nomeFantasia}</p>
-          <p>E-mail: {formValues.email}</p>
-          {formValues.telefone && <p>Telefone: {formValues.telefone}</p>}
-          <p>Celular: {formValues.celular}</p>
-          <p>{formValues.endereco} - {formValues.numero}</p>
-          <p>{formValues.bairro}</p>
-          <p>{formValues.cidade}</p>
-          <p>{formValues.estado}</p>
-          <p>{formValues.cep}</p>
-         
-        </Card>
-      ))}  
-       </BodyContainer>
+    <>
+      <BodyContainer> <h1>Opções de lojas</h1></BodyContainer>
+      <BodyContainer>
+        {formValuesList.map((formValues, index) => (
+          <Card key={index}>
+            <h2>{formValues.nome}</h2>
+            <p>Razão social: {formValues.razaoSocial}</p>
+            <p>CNPJ: {formValues.cnpj}</p>
+            <p>Nome Fantasia: {formValues.nomeFantasia}</p>
+            <p>E-mail: {formValues.email}</p>
+            {formValues.telefone && <p>Telefone: {formValues.telefone}</p>}
+            <p>Celular: {formValues.celular}</p>
+            <p>{formValues.endereco} - {formValues.numero}</p>
+            <p>{formValues.bairro}</p>
+            <p>{formValues.cidade}</p>
+            <p>{formValues.estado}</p>
+            <p>{formValues.cep}</p>
+          </Card>
+        ))}
+      </BodyContainer>
+    </>
   );
 }
 export default ListaDeLoja;

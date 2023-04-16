@@ -63,6 +63,8 @@ function CadastroDeLoja() {
   return (
     <BodyContainer>
       < FormContainer>
+      <h1>Cadastro de novas lojas</h1>
+      <br/>
         <form onSubmit={handleSubmit}>
           <label>
             Razão social: <span style={{ color: 'red' }}>*</span>

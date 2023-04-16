@@ -25,6 +25,7 @@ function MedicamentoForm() {
    return (
       <BodyContainer>
          <FormContainer>
+            <h1>Cadastro de mdecicamentos</h1>
             <form onSubmit={handleSubmit}>
                <label>
                   Nome do medicamento: <span style={{ color: 'red' }}>*</span>

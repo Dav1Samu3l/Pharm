@@ -23,7 +23,6 @@ function ListaDeLoja() {
             <Card key={index}>
               <img src="src\imgs\OIP (1).jpg" style={{ width: '50%', height: '50%' }} />
               <p >Dscrição:{formValues2.descricao}</p>
-              <p>{formValues2.laboratorio}</p>
               <p>Dosagem: {formValues2.dosagem}</p>
               <p>Laboratorio: {formValues2.laboratorio}</p>
               <p>Preco: R$ {formValues2.preco}</p>

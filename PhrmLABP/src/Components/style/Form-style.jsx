@@ -55,14 +55,14 @@ const BodyContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: auto;
 }
 
 .Login form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color:  #2f76b4;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -90,7 +90,6 @@ const BodyContainer = styled.div`
 .Login button {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -99,7 +98,7 @@ const BodyContainer = styled.div`
 }
 
 .Login button:hover {
-  background-color: #3e8e41;
+  background-color: #0069d9;
 }
 
 .Login .error {

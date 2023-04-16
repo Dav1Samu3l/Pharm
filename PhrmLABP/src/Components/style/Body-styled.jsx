@@ -8,7 +8,7 @@ const BodyContainer = styled.body`
   align-items: center;
   justify-content: center;
   margin: 102px 0px 100px;
-  background-color: #5283ad;
+  background-color: #2f76b4;
 
   @media (min-width: 768px) {
     display: flex;

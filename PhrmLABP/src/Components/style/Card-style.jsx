@@ -22,6 +22,7 @@ display: flex;
   padding: 10px;
   margin: 10px;
   width: 300px;
+ 
 
   h2 {
     font-size: 20px;

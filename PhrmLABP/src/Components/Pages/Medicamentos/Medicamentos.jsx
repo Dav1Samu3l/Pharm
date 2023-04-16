@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import BodyContainer from "../../style/Body-styled.jsx";
 import Card from "../../style/Card-style.jsx";
+import { IoIosSad } from "react-icons/io";
 
 
 function ListaDeLoja() {
@@ -13,20 +14,24 @@ function ListaDeLoja() {
   }, []);
   return (
     <>
-
       <BodyContainer> <h1>Opções de Medicamentos</h1></BodyContainer>
-      <BodyContainer>
-        {formValuesList.map((formValues2, index) => (
-          <Card key={index}>
-            <h2>{formValues2.nome}</h2>
-            <p>{formValues2.laboratorio}</p>
-            <p>Dosagem: {formValues2.dosagem}</p>
-            <p>Laboratorio: {formValues2.laboratorio}</p>
-            <p>Preco: R$ {formValues2.preco}</p>
-            <p>Tipo: {formValues2.tipo}</p>
-          </Card>
-        ))}
-      </BodyContainer>
+      {formValuesList.length === 0 ? (
+        <IoIosSad style={{ width: '50%', height: '50%' }} alt="imagem padrão" />
+      ) : (
+        <BodyContainer>
+          {formValuesList.map((formValues2, index) => (
+            <Card key={index}>
+              <img src="src\imgs\OIP (1).jpg" style={{ width: '50%', height: '50%' }} />
+              <p >Dscrição:{formValues2.descricao}</p>
+              <p>{formValues2.laboratorio}</p>
+              <p>Dosagem: {formValues2.dosagem}</p>
+              <p>Laboratorio: {formValues2.laboratorio}</p>
+              <p>Preco: R$ {formValues2.preco}</p>
+              <p>Tipo: {formValues2.tipo}</p>
+            </Card>
+          ))}
+        </BodyContainer>
+      )}
     </>
   );
 }

@@ -41,5 +41,10 @@ display: flex;
   p:last-of-type {
     margin-bottom: 0;
   }
+
+  div .img {
+   align-items: center;
+
+  }
 `;
 export default Card;

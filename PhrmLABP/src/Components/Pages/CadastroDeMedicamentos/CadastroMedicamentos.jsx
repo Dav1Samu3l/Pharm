@@ -3,7 +3,9 @@ import BodyContainer from '../../style/Body-styled';
 import FormContainer from '../../style/Form-style';
 
 function MedicamentoForm() {
-   const [formValues, setFormValues] = useState({});
+   const [formValues, setFormValues] = useState({ descricao: "" });
+   const [maxChars] = useState(30);
+
 
    const handleInputChange = (event) => {
       setFormValues({ ...formValues, [event.target.name]: event.target.value });
@@ -19,7 +21,13 @@ function MedicamentoForm() {
       setFormValues({});
       // Reseta os campos do formulário
       event.target.reset();
-    };
+   };
+   let restChars = maxChars;
+   if (formValues.descricao) {
+      restChars = maxChars - formValues.descricao.length;
+   }
+
+
 
 
    return (
@@ -66,7 +74,9 @@ function MedicamentoForm() {
                      name="descricao"
                      onChange={handleInputChange}
                      value={formValues.descricao}
+                     maxLength={maxChars}
                   />
+                  <p>Caracteres restantes: {restChars} </p>
                </label>
                <br />
                <label>

@@ -10,6 +10,10 @@ const FixedMenu = ({ logo }) => {
         setMenuOpen((prevMenuOpen) => !prevMenuOpen);
     };
 
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <div className="menu-container">
             <button className="menu-toggle" onClick={handleMenuToggle}>
@@ -17,19 +21,19 @@ const FixedMenu = ({ logo }) => {
             </button>
             <ul className={`menu-links ${menuOpen ? 'menu-open' : ''}`}>
                 <li className="menu-link">
-                    <Link  to="/Lojas">Lojas</Link>
+                    <Link to="/Lojas" onClick={handleLinkClick}>Lojas</Link>
                 </li>
                 <li className="menu-link">
-                    <Link  to="/Medicamentos">Medicamentos</Link>
+                    <Link to="/Medicamentos" onClick={handleLinkClick}>Medicamentos</Link>
                 </li>
                 <li className="menu-link">
-                    <Link  to="/Cadastro-de-lojas">Cadastro de lojas</Link>
+                    <Link to="/Cadastro-de-lojas" onClick={handleLinkClick}>Cadastro de lojas</Link>
                 </li>
                 <li className="menu-link">
-                    <Link  to="/Cadastro-de-medicamentos">Cadastro de medicamentos</Link>
+                    <Link to="/Cadastro-de-medicamentos" onClick={handleLinkClick}>Cadastro de medicamentos</Link>
                 </li>
                 <li className="menu-link">
-                    <Link  to="/sair">Sair</Link>
+                    <Link to="/sair" onClick={handleLinkClick}>Sair</Link>
                 </li>
             </ul>
         </div>

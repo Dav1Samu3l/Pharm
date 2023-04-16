@@ -21,6 +21,7 @@ function ListaDeLoja() {
         <BodyContainer>
           {formValuesList.map((formValues2, index) => (
             <Card key={index}>
+              <h1>{formValues2.nome}</h1>
               <img src="src\imgs\OIP (1).jpg" style={{ width: '50%', height: '50%' }} />
               <p >Dscrição:{formValues2.descricao}</p>
               <p>Dosagem: {formValues2.dosagem}</p>

@@ -18,12 +18,7 @@ function ListaDeLoja() {
     <>
       <BodyContainer> <h1>Opções de lojas</h1></BodyContainer>
 
-      {formValuesList.length === 0 ? (
-        <>
-          <p>Não há lojas cadastradas! cadastr em  <Link to="/Cadastro-de-lojas">Aqui!</Link> </p>
-          <IoIosSad style={{ width: '50%', height: '50%' }} alt="imagem padrão" />
-        </>
-      ) : (
+      {formValuesList.length !== 0 ? (
         <BodyContainer>
           {formValuesList.map((formValues, index) => (
             <Card key={index}>
@@ -42,6 +37,11 @@ function ListaDeLoja() {
             </Card>
           ))}
         </BodyContainer>
+      ) : (
+        <div id="aviso">
+          <p>Não há lojas cadastradas! cadastre <Link to="/Cadastro-de-lojas">Aqui!</Link> </p>
+          <IoIosSad style={{ width: '50%', height: '50%' }} alt="imagem padrão" />
+        </div>
 
 
       )}

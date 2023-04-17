@@ -58,7 +58,7 @@ function CadastroDeLoja() {
         estado: data.uf,
       });
     } catch (error) {
-      alert(error);
+      console.log(error);
     }
   };
 

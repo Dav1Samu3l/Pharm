@@ -8,6 +8,7 @@ import ReactInputMask from 'react-input-mask';
 function CadastroDeLoja() {
 
   const [formValues, setFormValues] = useState({});
+  const [formErrors, setFormErrors] = useState("");
   const [endereco, setEndereco] = useState('');
   const [bairro, setBairro] = useState('');
   const [cidade, setCidade] = useState('');
@@ -57,7 +58,7 @@ function CadastroDeLoja() {
         estado: data.uf,
       });
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
 
@@ -145,7 +146,7 @@ function CadastroDeLoja() {
                 type="text"
                 id="cep"
                 onBlur={handleBlurCep}
-                onMouseOut={handleBlurCep} />
+                 />
               <br />
               <label htmlFor="endereco">Endereço:</label>
               <ReactInputMask
@@ -180,7 +181,7 @@ function CadastroDeLoja() {
                 value={formValues.estado || ''}
                 onChange={(event) => setEndereco(event.target.value)} />
               <label htmlFor="Numero">Numero: </label>
-              <imput
+              <ReactInputMask
                 name='numero'
                 type='text'
                 id='numero'

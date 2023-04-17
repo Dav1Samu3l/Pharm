@@ -5,7 +5,9 @@
     padding: 35px;
     left: 0px;
     background-color:#a6d2f8;
+    
   }
+ 
   
   .menu-toggle {
     display: block;
@@ -43,13 +45,13 @@
   
   
   
+  
   @media (min-width: 600px) {
     .menu-container {
       display: flex;
       text-decoration: none;
       align-items: center;
-      justify-content: flex-end;
-      left: -60px;
+      left: -60px;      
     }
     .menu-toggle {
       display: none
@@ -57,7 +59,9 @@
     .menu-links {
       display: flex;
       flex-direction: row;
-      
-  
+    }
+    .menu-links    img {
+      width: 50px;
+      margin: 10px;
     }
   }

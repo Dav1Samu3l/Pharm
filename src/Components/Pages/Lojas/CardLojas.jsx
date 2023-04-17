@@ -29,11 +29,10 @@ function ListaDeLoja() {
               <p>E-mail: {formValues.email}</p>
               {formValues.telefone && <p>Telefone: {formValues.telefone}</p>}
               <p>Celular: {formValues.celular}</p>
-              <p>{formValues.endereco} - {formValues.numero}</p>
-              <p>{formValues.bairro}</p>
-              <p>{formValues.cidade}</p>
-              <p>{formValues.estado}</p>
-              <p>{formValues.cep}</p>
+              <p>{formValues.endereco} - n° {formValues.numero}</p>
+              <p>Cidade:{formValues.cidade}</p>
+              <p> Bairro: {formValues.bairro}</p>
+                 <p>Estado:  {formValues.estado}</p>
             </Card>
           ))}
         </BodyContainer>

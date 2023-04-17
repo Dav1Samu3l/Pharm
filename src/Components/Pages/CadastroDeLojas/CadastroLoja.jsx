@@ -180,7 +180,7 @@ function CadastroDeLoja() {
                 value={formValues.estado || ''}
                 onChange={(event) => setEndereco(event.target.value)} />
               <label htmlFor="Numero">Numero: </label>
-              <imput
+              <ReactInputMask
                 name='numero'
                 type='text'
                 id='numero'

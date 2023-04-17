@@ -5,10 +5,7 @@ const BodyContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  label{
-    margin: 0%;
-    
-  }
+ 
 
   form {
     display: flex;
@@ -18,6 +15,7 @@ const BodyContainer = styled.div`
     width: 100%;
 
     label {
+      text-align: left;
       width: 45%;
       margin-bottom: 20px;
     }
@@ -74,6 +72,7 @@ const BodyContainer = styled.div`
 }
 
 .Login label {
+  text-align: left;
   margin-bottom: 10px;
   font-size: 18px;
 }
@@ -111,11 +110,14 @@ const BodyContainer = styled.div`
     padding: 40px;
 
     label {
+     
+        text-align: left;
+      
       width: 80%;
     }
 
     input {
-      margin-bottom: 40px;
+      margin-bottom: 40px;ustes
     }
   }
 `;

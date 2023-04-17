@@ -6,7 +6,7 @@
 [[build]]
   command = "npm run build"
   publish = "build/"
-  [[build.environment]]
+  [[build]]
     NODE_ENV = "production"
   [build.headers]
     Content-Type = "text/javascript"

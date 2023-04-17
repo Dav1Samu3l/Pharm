@@ -93,7 +93,6 @@ function CadastroDeLoja() {
           <label>
             Nome Fantasia: <span style={{ color: 'red' }}>*</span>
             <ReactInputMask
-
               type="text"
               name="nomeFantasia"
               onChange={handleChange}
@@ -104,7 +103,7 @@ function CadastroDeLoja() {
           <br />
           <label>
             E-mail: <span style={{ color: 'red' }}>*</span>
-            <imput
+            <ReactInputMask
               type="email"
               name="email"
               onChange={handleChange}
@@ -181,7 +180,7 @@ function CadastroDeLoja() {
                 value={formValues.estado || ''}
                 onChange={(event) => setEndereco(event.target.value)} />
               <label htmlFor="Numero">Numero: </label>
-              <ReactInputMask
+              <imput
                 name='numero'
                 type='text'
                 id='numero'

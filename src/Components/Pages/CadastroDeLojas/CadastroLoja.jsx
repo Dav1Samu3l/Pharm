@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import BodyContainer from '../../style/Body-styled';
 import FormContainer from '../../style/Form-style';
+import ReactInputMask from 'react-input-mask';
 
 
 
@@ -63,12 +64,12 @@ function CadastroDeLoja() {
   return (
     <BodyContainer>
       < FormContainer>
-      <h1>Cadastro de novas lojas</h1>
-      <br/>
+        <h1>Cadastro de novas lojas</h1>
+        <br />
         <form onSubmit={handleSubmit}>
           <label>
             Razão social: <span style={{ color: 'red' }}>*</span>
-            <input
+            <ReactInputMask
               type="text"
               name="razaoSocial"
               onChange={handleChange}
@@ -79,7 +80,8 @@ function CadastroDeLoja() {
           <br />
           <label>
             CNPJ: <span style={{ color: 'red' }}>*</span>
-            <input
+            <ReactInputMask
+              mask="99.999.999/9999-99"
               type="text"
               name="cnpj"
               onChange={handleChange}
@@ -90,7 +92,8 @@ function CadastroDeLoja() {
           <br />
           <label>
             Nome Fantasia: <span style={{ color: 'red' }}>*</span>
-            <input
+            <ReactInputMask
+
               type="text"
               name="nomeFantasia"
               onChange={handleChange}
@@ -101,7 +104,7 @@ function CadastroDeLoja() {
           <br />
           <label>
             E-mail: <span style={{ color: 'red' }}>*</span>
-            <input
+            <imput
               type="email"
               name="email"
               onChange={handleChange}
@@ -112,7 +115,8 @@ function CadastroDeLoja() {
           <br />
           <label>
             Telefone:
-            <input
+            <ReactInputMask
+              mask="(99) 9999-9999"
               type="tel"
               name="telefone"
               onChange={handleChange}
@@ -122,7 +126,8 @@ function CadastroDeLoja() {
           <br />
           <label>
             Celular: <span style={{ color: 'red' }}>*</span>
-            <input
+            <ReactInputMask
+            mask="(99) 99999-9999"
               type="tel"
               name="celular"
               onChange={handleChange}
@@ -135,7 +140,8 @@ function CadastroDeLoja() {
             <legend>Endereço:</legend>
             <form>
               <label htmlFor="cep">CEP:<span style={{ color: 'red' }}> *</span></label>
-              <input
+              <ReactInputMask
+                mask="99999-999"
                 name="cep"
                 type="text"
                 id="cep"
@@ -143,8 +149,8 @@ function CadastroDeLoja() {
                 onMouseOut={handleBlurCep} />
               <br />
               <label htmlFor="endereco">Endereço:</label>
-              <input
-              onMouseOut={handleBlurCep}
+              <ReactInputMask
+                onMouseOut={handleBlurCep}
                 name="endereco"
                 type="text"
                 id="endereco"
@@ -152,7 +158,7 @@ function CadastroDeLoja() {
                 onChange={(event) => setEndereco(event.target.value)} />
               <br />
               <label htmlFor="bairro">Bairro:</label>
-              <input
+              <ReactInputMask
                 name="bairro"
                 type="text"
                 id="bairro"
@@ -161,26 +167,26 @@ function CadastroDeLoja() {
               <br />
               <label
                 htmlFor="cidade">Cidade:</label>
-              <input
+              <ReactInputMask
                 type="text"
                 id="cidade"
                 value={formValues.cidade || ''}
                 onChange={(event) => setEndereco(event.target.value)} />
               <br />
               <label htmlFor="estado">Estado:</label>
-              <input
+              <ReactInputMask
                 name="estado"
                 type="text"
                 id="estado"
                 value={formValues.estado || ''}
                 onChange={(event) => setEndereco(event.target.value)} />
               <label htmlFor="Numero">Numero: </label>
-                <input
-                  name='numero'
-                  type='text'
-                  id='numero'
-                  value={formValues.numero || ''}
-                  onChange={handleChange}/>
+              <ReactInputMask
+                name='numero'
+                type='text'
+                id='numero'
+                value={formValues.numero || ''}
+                onChange={handleChange} />
             </form>
           </fieldset>
           <button type="submit">Salvar</button>

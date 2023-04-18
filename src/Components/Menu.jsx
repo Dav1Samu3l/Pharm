@@ -39,7 +39,6 @@ const FixedMenu = ({ logo }) => {
                     <Link to="/sair" onClick={handleLinkClick}><IoMdLogOut />  Sair</Link>
                 </li>
             </ul>
-        <img src="src/imgs/R.png" style={{ width: '10%', margin: '-45px 0px 13px 227px', display: 'inline-block' }} alt="" />
         </div>
             
             </>

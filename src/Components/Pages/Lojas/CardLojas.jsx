@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import BodyContainer from "../../style/Body-styled.jsx";
 import Card from "../../style/Card-style.jsx";
-import { IoIosSad } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 
@@ -27,19 +26,18 @@ function ListaDeLoja() {
               <p>CNPJ: {formValues.cnpj}</p>
               <p>Nome Fantasia: {formValues.nomeFantasia}</p>
               <p>E-mail: {formValues.email}</p>
-              {formValues.telefone && <p>Telefone: {formValues.telefone}</p>}
+              <p>Telefone: {formValues.telefone}</p>
               <p>Celular: {formValues.celular}</p>
               <p>{formValues.endereco} - n° {formValues.numero}</p>
               <p>Cidade:{formValues.cidade}</p>
               <p> Bairro: {formValues.bairro}</p>
-                 <p>Estado:  {formValues.estado}</p>
+              <p>Estado:  {formValues.estado}</p>
             </Card>
           ))}
         </BodyContainer>
       ) : (
         <div id="aviso">
           <p>Não há lojas cadastradas! cadastre <Link to="/Cadastro-de-lojas">Aqui!</Link> </p>
-          <IoIosSad style={{ width: '50%', height: '50%' }} alt="imagem padrão" />
         </div>
 
 

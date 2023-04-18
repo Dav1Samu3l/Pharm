@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import BodyContainer from "../../style/Body-styled.jsx";
 import Card from "../../style/Card-style.jsx";
-import { IoIosSad } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 
@@ -33,7 +32,6 @@ function ListaDeLoja() {
       ) : (
         <>
           <p>Não há lojas cadastradas! cadastre <Link to="/Cadastro-de-medicamentos">Aqui!</Link> </p>
-          <IoIosSad style={{ width: '50%', height: '50%' }} alt="imagem padrão" />
 
         </>
       )}

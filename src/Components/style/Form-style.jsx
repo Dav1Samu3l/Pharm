@@ -117,7 +117,7 @@ const BodyContainer = styled.div`
     }
 
     input {
-      margin-bottom: 40px;ustes
+      margin-bottom: 40px;
     }
   }
 `;

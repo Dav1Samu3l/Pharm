@@ -8,7 +8,6 @@ import ReactInputMask from 'react-input-mask';
 function CadastroDeLoja() {
 
   const [formValues, setFormValues] = useState({});
-  const [formErrors, setFormErrors] = useState("");
   const [endereco, setEndereco] = useState('');
   const [bairro, setBairro] = useState('');
   const [cidade, setCidade] = useState('');
@@ -58,7 +57,7 @@ function CadastroDeLoja() {
         estado: data.uf,
       });
     } catch (error) {
-      alert(error);
+      console.log(error);
     }
   };
 
@@ -163,7 +162,7 @@ function CadastroDeLoja() {
                 type="text"
                 id="bairro"
                 value={formValues.bairro || ''}
-                onChange={(event) => setEndereco(event.target.value)} />
+                  onChange={(event) => setEndereco(event.target.value)} />
               <br />
               <label
                 htmlFor="cidade">Cidade:</label>

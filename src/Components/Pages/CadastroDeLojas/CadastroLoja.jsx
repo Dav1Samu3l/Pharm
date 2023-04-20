@@ -145,7 +145,7 @@ function CadastroDeLoja() {
                 type="text"
                 id="cep"
                 onBlur={handleBlurCep}
-                onMouseOut={handleBlurCep} />
+                 />
               <br />
               <label htmlFor="endereco">Endereço:</label>
               <ReactInputMask
@@ -162,7 +162,7 @@ function CadastroDeLoja() {
                 type="text"
                 id="bairro"
                 value={formValues.bairro || ''}
-                onChange={(event) => setEndereco(event.target.value)} />
+                  onChange={(event) => setEndereco(event.target.value)} />
               <br />
               <label
                 htmlFor="cidade">Cidade:</label>
@@ -180,7 +180,7 @@ function CadastroDeLoja() {
                 value={formValues.estado || ''}
                 onChange={(event) => setEndereco(event.target.value)} />
               <label htmlFor="Numero">Numero: </label>
-              <imput
+              <ReactInputMask
                 name='numero'
                 type='text'
                 id='numero'

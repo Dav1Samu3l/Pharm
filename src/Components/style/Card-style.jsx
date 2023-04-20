@@ -24,6 +24,7 @@ display: flex;
   width: 300px;
  
 
+ 
   h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -42,9 +43,6 @@ display: flex;
     margin-bottom: 0;
   }
 
-  div .img {
-   align-items: center;
 
-  }
 `;
 export default Card;

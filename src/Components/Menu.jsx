@@ -15,8 +15,9 @@ const FixedMenu = ({ logo }) => {
     const handleLinkClick = () => {
         setMenuOpen(false);
     };
-
+    
     return (
+        <>
         <div className="menu-container">
             <button className="menu-toggle" onClick={handleMenuToggle}>
                 {menuOpen ? '✕' : '☰'}
@@ -39,6 +40,8 @@ const FixedMenu = ({ logo }) => {
                 </li>
             </ul>
         </div>
+            
+            </>
     );
 };
 

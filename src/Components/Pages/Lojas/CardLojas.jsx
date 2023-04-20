@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import BodyContainer from "../../style/Body-styled.jsx";
-import Card from "../../style/Card-style.jsx";
-import { IoIosSad } from "react-icons/io";
+import Table from "../../style/Table-style.jsx";
 import { Link } from "react-router-dom";
 
 
@@ -17,34 +16,48 @@ function ListaDeLoja() {
   return (
     <>
       <BodyContainer> <h1>Opções de lojas</h1></BodyContainer>
-
-      {formValuesList.length === 0 ? (
-        <>
-          <p>Não há lojas cadastradas! cadastr em  <Link to="/Cadastro-de-lojas">Aqui!</Link> </p>
-          <IoIosSad style={{ width: '50%', height: '50%' }} alt="imagem padrão" />
-        </>
-      ) : (
-        <BodyContainer>
-          {formValuesList.map((formValues, index) => (
-            <Card key={index}>
-              <h2>{formValues.nome}</h2>
-              <p>Razão social: {formValues.razaoSocial}</p>
-              <p>CNPJ: {formValues.cnpj}</p>
-              <p>Nome Fantasia: {formValues.nomeFantasia}</p>
-              <p>E-mail: {formValues.email}</p>
-              {formValues.telefone && <p>Telefone: {formValues.telefone}</p>}
-              <p>Celular: {formValues.celular}</p>
-              <p>{formValues.endereco} - {formValues.numero}</p>
-              <p>{formValues.bairro}</p>
-              <p>{formValues.cidade}</p>
-              <p>{formValues.estado}</p>
-              <p>{formValues.cep}</p>
-            </Card>
-          ))}
-        </BodyContainer>
-
-
-      )}
+      <BodyContainer>
+        {formValuesList.length !== 0 ? (
+          <Table>
+            <thead>
+              <tr>
+                <th>Razão social</th>
+                <th>CNPJ</th>
+                <th>Nome Fantasia</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Celular</th>
+                <th>Endereço</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              {formValuesList.map((formValues, index) => (
+                <tr key={index}>
+                  <td>{formValues.razaoSocial}</td>
+                  <td>{formValues.cnpj}</td>
+                  <td>{formValues.nomeFantasia}</td>
+                  <td>{formValues.email}</td>
+                  <td>{formValues.telefone}</td>
+                  <td>{formValues.celular}</td>
+                  <td>{formValues.endereco}</td>
+                  <td>{formValues.numero}</td>
+                  <td>{formValues.cidade}</td>
+                  <td>{formValues.bairro}</td>
+                  <td>{formValues.estado} </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        ) : (
+          <div id="aviso">
+            <p>Não há lojas cadastradas! cadastre <Link to="/Cadastro-de-lojas">Aqui!</Link> </p>
+          </div>
+        )}
+      </BodyContainer>
     </>
   );
 }

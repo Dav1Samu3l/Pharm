@@ -13,6 +13,9 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <LoginPage />,
+    children: [
+      { path: '/Sair', element: <LoginPage /> },
+    ]
   },
   {
     path: '/',
@@ -22,7 +25,6 @@ const router = createBrowserRouter([
       { path: '/Medicamentos', element: <Medicamentos /> },
       { path: '/Cadastro-de-lojas', element: <CadastroDeLoja/> },
       { path: '/Cadastro-de-medicamentos', element: <CadastroMed/> },
-      { path: '/Sair', element: <Sair /> },
     ],
   },
 ]);

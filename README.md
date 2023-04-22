@@ -21,4 +21,4 @@ Pharm é um aplicativo desenvolvido para fins educativos que permite o cadastro 
 
 - 1 faça o clone do repositorio: `https://github.com/Dav1Samu3l/Pharm.git`
 - 2 nevege até a pata rais do proveto e rode ` npm run dev`
-- 3 navege ate o localho ` http://localhost:5173/`
+- 3 navege até ` http://localhost:5173/`

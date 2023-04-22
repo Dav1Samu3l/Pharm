@@ -15,7 +15,7 @@ Pharm é um aplicativo desenvolvido para fins educativos que permite o cadastro 
 
  ### O app tem o seguinte fluxo:
 
-![image](https://user-images.githubusercontent.com/106498376/233798396-1ef627c5-64d7-42e6-b23c-2b58c81398ce.png)
+![image](https://user-images.githubusercontent.com/106498376/233800091-66e03507-e1fa-4d9e-903c-3a97255dfd75.png)
 
 ### Para usar o app:
 

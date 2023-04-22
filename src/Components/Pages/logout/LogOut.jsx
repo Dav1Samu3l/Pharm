@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Sair(props) {
+function Sair() {
 
     return (
 

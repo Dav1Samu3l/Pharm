@@ -32,10 +32,6 @@ function LoginPage() {
 
   return (
     <BodyContainer>
-
-
-
-
       <FormContainer>
         <div className='Login'>
           <div>

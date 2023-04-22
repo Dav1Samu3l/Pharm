@@ -4,7 +4,6 @@ import App from './App'
 import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import CardLojas from './Components/Pages/Lojas/CardLojas';
 import Medicamentos from './Components/Pages/Medicamentos/Medicamentos';
-import Sair from './Components/Pages/logout/LogOut';
 import CadastroDeLoja from './Components/Pages/CadastroDeLojas/CadastroLoja';
 import CadastroMed from './Components/Pages/CadastroDeMedicamentos/CadastroMedicamentos';
 import LoginPage from './Components/Pages/Logim/Logim';
@@ -31,7 +30,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
-      <RouterProvider router={router} />
+
+      <RouterProvider ariaHideApp={false} router={router} />
   </React.StrictMode>
 
 )

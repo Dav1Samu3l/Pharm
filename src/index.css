@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&display=swap');
+
+
+
 * {
   padding: 0;
   border: 0;
   box-sizing: border-box;
   padding: 11px;
+  font-family: 'Anuphan', sans-serif;
+
 }

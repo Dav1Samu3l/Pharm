@@ -17,31 +17,31 @@ display: flex;
     background-color:#3c75a7;
     box-shadow:  #000000f1(11, 11, 11, 1.36) 0px 0px 10px ;
     
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
  
 
- 
-  h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
 
-  p {
+    p {
     font-size: 16px;
     margin: 5px 0;
-  }
+    }
 
-  p:first-of-type {
-    font-weight: bold;
-  }
+    p:first-of-type {
+      font-weight: bold;
+    }
 
-  p:last-of-type {
-    margin-bottom: 0;
-  }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
 
 
 `;

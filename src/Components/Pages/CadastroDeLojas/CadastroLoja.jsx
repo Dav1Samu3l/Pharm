@@ -126,7 +126,7 @@ function CadastroDeLoja() {
           <label>
             Celular: <span style={{ color: 'red' }}>*</span>
             <ReactInputMask
-            mask="(99) 99999-9999"
+              mask="(99) 99999-9999"
               type="tel"
               name="celular"
               onChange={handleChange}
@@ -145,7 +145,7 @@ function CadastroDeLoja() {
                 type="text"
                 id="cep"
                 onBlur={handleBlurCep}
-                 />
+              />
               <br />
               <label htmlFor="endereco">Endereço:</label>
               <ReactInputMask
@@ -162,7 +162,7 @@ function CadastroDeLoja() {
                 type="text"
                 id="bairro"
                 value={formValues.bairro || ''}
-                  onChange={(event) => setEndereco(event.target.value)} />
+                onChange={(event) => setEndereco(event.target.value)} />
               <br />
               <label
                 htmlFor="cidade">Cidade:</label>

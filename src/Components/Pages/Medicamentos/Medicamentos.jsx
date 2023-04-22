@@ -47,24 +47,23 @@ function Medicamentos() {
       ) : (
         <>
           <p>Não há lojas cadastradas! cadastre <Link to="/Cadastro-de-medicamentos">Aqui!</Link> </p>
-
         </>
       )}
       <Modal>
-      <ReactModal isOpen={modalIsOpen}  onRequestClose={() => handleCloseModal()}>
-        {modalIndex !== null && (
-          <>
-            <h1>Detalhes do medicamento</h1>
-            <p>Nome: {formValuesList[modalIndex].nome}</p>
-            <p>Descrição: {formValuesList[modalIndex].descricao}</p>
-            <p>Dosagem: {formValuesList[modalIndex].dosagem}</p>
-            <p>Laboratório: {formValuesList[modalIndex].laboratorio}</p>
-            <p>Preço: R$ {formValuesList[modalIndex].preco}</p>
-          </>
-        )}
-        <button onClick={() => handleCloseModal()}>Fechar</button>
-      </ReactModal>
-      </Modal>  
+        <ReactModal isOpen={modalIsOpen} onRequestClose={() => handleCloseModal()}>
+          {modalIndex !== null && (
+            <>
+              <h1>Detalhes do medicamento</h1>
+              <p>Nome: {formValuesList[modalIndex].nome}</p>
+              <p>Descrição: {formValuesList[modalIndex].descricao}</p>
+              <p>Dosagem: {formValuesList[modalIndex].dosagem}</p>
+              <p>Laboratório: {formValuesList[modalIndex].laboratorio}</p>
+              <p>Preço: R$ {formValuesList[modalIndex].preco}</p>
+            </>
+          )}
+          <button onClick={() => handleCloseModal()}>Fechar</button>
+        </ReactModal>
+      </Modal>
     </>
   );
 }

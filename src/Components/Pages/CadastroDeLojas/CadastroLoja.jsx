@@ -28,6 +28,7 @@ function CadastroDeLoja() {
 
     // Reseta o estado do formulário
     setFormValues({});
+    alert("formulário enviado com sucesso!");
   };
 
   const handleBlurCep = async (event) => {

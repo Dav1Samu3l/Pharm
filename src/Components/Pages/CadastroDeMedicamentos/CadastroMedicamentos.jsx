@@ -21,6 +21,7 @@ function MedicamentoForm() {
       setFormValues({});
       // Reseta os campos do formulário
       event.target.reset();
+      alert("formulário enviado com sucesso!");
    };
    let restChars = maxChars;
    if (formValues.descricao) {
